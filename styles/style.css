@@ -60,6 +60,7 @@ ol {
   block-size: 386px;
   inline-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -232,8 +233,10 @@ ol {
 
 .content__list {
   max-block-size: 298px;
+  height: 298px;
+  width: 399px;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   position: relative;
   scrollbar-width: none;
 }
@@ -287,6 +290,10 @@ ol {
   line-height: 100%;
   text-transform: uppercase;
   padding-block-end: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
 }
 
 .content__video-card-description {
@@ -299,6 +306,7 @@ ol {
   justify-self: end;
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
 }
 
 .more-button {
